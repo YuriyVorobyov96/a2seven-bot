@@ -1,0 +1,31 @@
+{
+  "name": "a2seven-bot",
+  "version": "1.0.0",
+  "description": "A2SEVEN bot for gamification and other processes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuriy Vorobyov",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@a2seven/eslint-config": "1.0.4",
+    "@types/node": "18.16.3",
+    "@typescript-eslint/eslint-plugin": "5.15.0",
+    "@typescript-eslint/parser": "5.15.0",
+    "eslint": "8.11.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-max-params-no-constructor": "0.0.4",
+    "eslint-plugin-no-loops": "0.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "prettier": "2.6.0",
+    "ts-node": "10.9.1"
+  }
+}
