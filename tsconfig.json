@@ -1,25 +1,21 @@
 {
   "compilerOptions": {
-    "lib": [
-      "es5",
-      "es6",
-      "es7",
-      "dom"
-    ],
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "allowSyntheticDefaultImports": true,
-    "strict": true
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "allowJs": true,
+    "esModuleInterop": true
+  }
 }
