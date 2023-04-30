@@ -10,8 +10,6 @@ export default class StartCommand extends ACommand {
 
   public handle(): void {
     this.bot.start((ctx) => {
-      console.log(ctx.session);
-
       ctx.reply(
         'Test',
         Markup.inlineKeyboard([
@@ -22,11 +20,13 @@ export default class StartCommand extends ACommand {
     });
 
     this.bot.action('test_1', (ctx) => {
+      // eslint-disable-next-line no-param-reassign
       ctx.session.test = 1;
       ctx.editMessageText('YES');
     });
 
     this.bot.action('test_2', (ctx) => {
+      // eslint-disable-next-line no-param-reassign
       ctx.session.test = 0;
       ctx.editMessageText('NO');
     });
