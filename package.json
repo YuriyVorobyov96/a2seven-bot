@@ -4,7 +4,8 @@
   "description": "A2SEVEN bot for gamification and other processes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node ./dist/src/app.js"
   },
   "author": "Yuriy Vorobyov",
   "license": "ISC",
