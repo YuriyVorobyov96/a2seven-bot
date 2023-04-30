@@ -1,5 +1,6 @@
 import config from 'config';
-import { session, Telegraf } from 'telegraf';
+import { Telegraf } from 'telegraf';
+import LocalSession from 'telegraf-session-local';
 
 import ACommand from './commands/command.class';
 import StartCommand from './commands/start.command';
@@ -14,7 +15,9 @@ class Bot {
 
   constructor(token: string) {
     this.bot = new Telegraf<IContext>(token);
-    this.bot.use(session());
+
+    // TODO LocalSession is used only for testing, switch to official @telegraf/session later
+    this.bot.use(new LocalSession({ database: 'sessions.json' }).middleware());
   }
 
   public init(): void {
